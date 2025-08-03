@@ -6,7 +6,7 @@ import pygame
 
 from settings import Settings
 from ship import Ship
-print(dir(Ship) #debuggin \!/
+print(dir(Ship)) # debuggin \!/
 #       Traceback (most recent call last):
 #   File "/home/fenix/Python-bits/Crash-course/alien_invasion/alien_invasion.py", line 46, in <module>
 #     ai = AlienInvasion()
