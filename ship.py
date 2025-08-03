@@ -1,9 +1,9 @@
-import game
+import pygame
 
 class Ship:
     """ A class to manage the ship."""
 
-    def _init(self, ai_game):
+    def _init__(self, ai_game):
         """ Initialize the ship"""
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
@@ -14,6 +14,8 @@ class Ship:
 
         # Start each new ship image and get its rect.
         self.rect.midbottom = self.screen_rect.midbottom
+
+
 
     def blitme(self):
         """ Draw the ship at its current location."""

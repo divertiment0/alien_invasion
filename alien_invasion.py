@@ -5,6 +5,17 @@ import sys
 import pygame
 
 from settings import Settings
+from ship import Ship
+print(dir(Ship) #debuggin \!/
+#       Traceback (most recent call last):
+#   File "/home/fenix/Python-bits/Crash-course/alien_invasion/alien_invasion.py", line 46, in <module>
+#     ai = AlienInvasion()
+#          ^^^^^^^^^^^^^^^
+#   File "/home/fenix/Python-bits/Crash-course/alien_invasion/alien_invasion.py", line 24, in __init__
+#     self.ship = Ship(self)
+#                 ^^^^^^^^^^
+# TypeError: Ship() takes no arguments
+
 
 class AlienInvasion:
  
@@ -17,11 +28,10 @@ class AlienInvasion:
         self.settings = Settings()
 
         self.screen = pygame.display.set_mode(
-            (self.settings.screen_height))
+            (self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invasion")
 
-        # Set background color.
-        self.bg_color = (230, 230, 230)
+        self.ship = Ship(self)
 
     def run_game(self):
         """ Start the main loop for the game."""
@@ -33,6 +43,7 @@ class AlienInvasion:
 
             # Redraw the screen during each pass through the loop.
             self.screen.fill(self.settings.bg_color)
+            self.ship.blitme()
 
             # Make the most recently drawn screen visible.
             pygame.display.flip()
