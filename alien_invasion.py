@@ -1,4 +1,4 @@
-# Chap.12 - p.228 ~ Alien Invasion 
+# Chap.12 - p.22-8 ~ Alien Invasion 
 
 import sys
 
@@ -6,16 +6,6 @@ import pygame
 
 from settings import Settings
 from ship import Ship
-print(dir(Ship)) # debuggin \!/
-#       Traceback (most recent call last):
-#   File "/home/fenix/Python-bits/Crash-course/alien_invasion/alien_invasion.py", line 46, in <module>
-#     ai = AlienInvasion()
-#          ^^^^^^^^^^^^^^^
-#   File "/home/fenix/Python-bits/Crash-course/alien_invasion/alien_invasion.py", line 24, in __init__
-#     self.ship = Ship(self)
-#                 ^^^^^^^^^^
-# TypeError: Ship() takes no arguments
-
 
 class AlienInvasion:
  
@@ -36,11 +26,8 @@ class AlienInvasion:
     def run_game(self):
         """ Start the main loop for the game."""
         while True:
-            # Watch for keyboard and mouse events.
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    sys.exit()
-
+            self.check_events()
+            
             # Redraw the screen during each pass through the loop.
             self.screen.fill(self.settings.bg_color)
             self.ship.blitme()
@@ -49,6 +36,11 @@ class AlienInvasion:
             pygame.display.flip()
             self.clock.tick(60)
 
+    def check_events(self):
+        """ Watch for keyboard and mouse events. """
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
 
 if __name__ == '__main__':
 
