@@ -21,6 +21,8 @@ class AlienInvasion:
             (self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invasion")
 
+        self.moving_right = False 
+
         self.ship = Ship(self)
 
         
@@ -28,6 +30,11 @@ class AlienInvasion:
         """ Start the main loop for the game."""
         while True:
             self._check_events()
+
+            # Update ship position
+            if self.moving_right:
+                self.ship.rect.x +=1
+            
             self._update_screen()
             self.clock.tick(60)
 
@@ -38,8 +45,12 @@ class AlienInvasion:
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RIGHT:
-                    # Move the ship to the right.
-                    self.ship.rect.x += 1
+                    self.moving_right = True
+                    # Move the ship to the right While KEYUP isnt pressed
+            elif event.type == pygame.KEYUP:
+                self.moving_right = False
+                        
+                    
 
     def _update_screen(self):
         """ Redraw the screen during each pass through the loop."""
