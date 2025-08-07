@@ -22,7 +22,7 @@ class Ship:
         """ Update the ship's position based on the movement flag. """
         if self.moving_right:
             self.rect.x += 1
-        if self.moving_left:
+        elif self.moving_left:
             self.rect.x -= 1
 
 
