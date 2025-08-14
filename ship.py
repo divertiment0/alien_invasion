@@ -8,7 +8,7 @@ class Ship:
     def __init__(self, ai_game):
         """ Initialize the ship"""
         self.screen = ai_game.screen
-        self.screen = ai_game.settings
+        self.settings = ai_game.settings
         self.screen_rect = ai_game.screen.get_rect()
 
         # Load the image an get it's rect.
@@ -32,6 +32,8 @@ class Ship:
             self.x += self.settings.ship_speed
         elif self.moving_left:
             self.x -= self.settings.ship_speed
+        
+        self.rect.x = self.x
 
 
     def blitme(self):
