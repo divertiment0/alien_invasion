@@ -1,6 +1,5 @@
 import pygame
 
-# from settings import Settings
 
 class Ship:
     """ A class to manage the ship."""
@@ -25,6 +24,8 @@ class Ship:
         
         self.moving_right = False
         self.moving_left = False
+        self.moving_up = False
+        self.moving_down = False
 
     def update(self):
         """ Update the ship's position based on the movement flag. """
@@ -32,8 +33,12 @@ class Ship:
             self.x += self.settings.ship_speed
         elif self.moving_left and self.rect.left > 0:
             self.x -= self.settings.ship_speed
+        elif self.moving_up and self.rect.top: # TADA limit ship movement < top screen
+            self.y += self.settings.ship_speed
+            
         
         self.rect.x = self.x
+        self.rect.y = self.y
 
 
     def blitme(self):
