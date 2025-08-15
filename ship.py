@@ -20,6 +20,7 @@ class Ship:
 
         # Store a float for the ship's exact horizontal position
         self.x = float(self.rect.x)
+        self.y = float(self.rect.y)
 
         
         self.moving_right = False
@@ -33,8 +34,8 @@ class Ship:
             self.x += self.settings.ship_speed
         elif self.moving_left and self.rect.left > 0:
             self.x -= self.settings.ship_speed
-        elif self.moving_up and self.rect.top: # TADA limit ship movement < top screen
-            self.y += self.settings.ship_speed
+        elif self.moving_up and self.rect.top > 0: # TADA limit ship movement < top screen
+            self.y -= self.settings.ship_speed
             
         
         self.rect.x = self.x

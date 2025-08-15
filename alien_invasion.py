@@ -50,13 +50,18 @@ class AlienInvasion:
             # Move the ship to the right -> While KEYUP isnt pressed
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = True
+        elif event.key == pygame.K_UP:
+            self.ship.moving_up = True
         
 
     def _check_keyup_events(self, event):
         if event.key == pygame.K_RIGHT:
             self.ship.moving_right = False
         if event.key == pygame.K_LEFT:
-                self.ship.moving_left = False
+            self.ship.moving_left = False
+        if event.key == pygame.K_UP:
+            self.ship.moving_up = False
+            
 
 
     def _update_screen(self):
