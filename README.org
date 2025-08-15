@@ -1,0 +1,54 @@
+*  Alien Invasion
+
+Chapter 12 - from [ | ]  PYTHON CRASH COURSE (3RD EDITION) A Hands-On, Project-Based
+  Introduction to Programming 
+  b y  E r ic  M a t t h e s
+
+A SHIP THAT FIRES BULLETS . 227
+
+Let’s build a game called Alien Invasion!
+We’ll use Pygame, a collection of fun, powerful Python modules that manage graphics,
+animation, and even sound, making it easier for you to build sophisticated games.
+  With Pygame handling tasks like drawing images to the screen, you can focus on the higher-level logic of game dynamics.
+In this chapter, you’ll set up Pygame and then create a rocket ship that moves right and left and fires bullets in response to player input. In the next
+two chapters, you’ll create a fleet of aliens to destroy, and then continue to refine the game by setting limits on the number of ships you can use and
+adding a scoreboard.
+
+** DONE Planning Your Project .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 228
+** DONE Installing Pygame  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 228
+** DONE Starting the Game Project  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 229
+** DONE Creating a Pygame Window and Responding to User Input  .  .  .  .  .  .  .  .  .  .  .  .  . 229
+** DONE Controlling the Frame Rate  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 230
+** DONE Setting the Background Color  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 231
+** DONE Creating a Settings Class  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 232
+** DONE Adding the Ship Image  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 233
+** DONE Creating the Ship Class  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 234
+** DONE Drawing the Ship to the Screen .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 235
+** DONE Refactoring: The _check_events() and _update_screen() Methods . . . . . . . . . . . . . . . . 237
+** DONE The _check_events() Method  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 237
+** DONE The _update_screen() Method  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 237
+** TODO Exercise 12-1: Blue Sky  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 238
+** DONE Exercise 12-2: Game Character  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 238
+** DONE Piloting the Ship .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 238
+** DONE Responding to a Keypress .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 238
+** DONE Allowing Continuous Movement .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 239
+** DONE Moving Both Left and Right .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 241
+** DONE Adjusting the Ship’s Speed  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 242
+** DONE Limiting the Ship’s Range  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 243
+** DONE Refactoring _check_events() .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 244
+** DONE Pressing Q to Quit .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 244
+** Running the Game in Fullscreen Mode .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 245
+** A Quick Recap .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 245
+** alien_invasion.py .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 246
+** settings.py .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 246
+** ship.py .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 246
+** Exercise 12-3: Pygame Documentation  . . . . . . . . . . . . . . . . . . . . . . . . . . . 246
+** Exercise 12-4: Rocket  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246
+** Exercise 12-5: Keys  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246
+** Shooting Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 247
+** Adding the Bullet Settings .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 247
+** Creating the Bullet Class .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 247
+** Storing Bullets in a Group .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 248
+** Firing Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 249
+** Deleting Old Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 250
+  
