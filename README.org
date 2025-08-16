@@ -50,8 +50,9 @@ adding a scoreboard.
 *** DONE Creating the Bullet Class .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 247
 *** DONE Storing Bullets in a Group .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 248
 *** DONE Firing Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 249
-*** PROCESS Deleting Old Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 250
-  
+*** DONE Deleting Old Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 250
+*** TODO Creating the _update_bullets() Method Refactoring 
+
 * TRY IT YOURSELF
 ** DONE 12-4. Rocket: Make a game that begins with a rocket in the center of the screen.
 Allow the player to move the rocket up, down, left, or right using the four arrow
