@@ -89,6 +89,9 @@ class AlienInvasion:
     def _update_screen(self):
         """ Redraw the screen during each pass through the loop."""
         self.screen.fill(self.settings.bg_color)
+        for bullet in self.bullets.sprites():
+            bullet.draw_bullet()
+
         self.ship.blitme()
         
         # Make the most recently drawn screen visible.
