@@ -51,7 +51,40 @@ adding a scoreboard.
 *** DONE Storing Bullets in a Group .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 248
 *** DONE Firing Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 249
 *** DONE Deleting Old Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 250
-*** TODO Creating the _update_bullets() Method Refactoring 
+*** TODO Creating the _update_bullets() Method Refactoring
+
+* ALIENS! ... 255
+** DONE Reviewing the Project .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 256
+** DONE Creating the First Alien  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 256
+** DONE Creating the Alien Class .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 257
+** DONE Creating an Instance of the Alien .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 257
+** Building the Alien Fleet  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 259
+** Creating a Row of Aliens  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 259
+** Refactoring _create_fleet() .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 260
+** Adding Rows .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 261
+** Exercise 13-1: Stars  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263
+** Exercise 13-2: Better Stars  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263
+** Making the Fleet Move  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 263
+** Moving the Aliens Right  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 263
+** Creating Settings for Fleet Direction .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 264
+** Checking Whether an Alien Has Hit the Edge .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 265
+** Dropping the Fleet and Changing Direction .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 265
+** Exercise 13-3: Raindrops  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 266
+** Exercise 13-4: Steady Rain  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 266
+** Shooting Aliens .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 266
+** Detecting Bullet Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 267
+** Making Larger Bullets for Testing  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 268
+** Repopulating the Fleet  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 268
+** Speeding Up the Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 269
+** Refactoring _update_bullets() .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 269
+** Exercise 13-5: Sideways Shooter Part 2  . . . . . . . . . . . . . . . . . . . . . . . . . . 270
+** Ending the Game  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 270
+** Detecting Alien-Ship Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 270
+** Responding to Alien-Ship Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 271
+** Aliens That Reach the Bottom of the Screen .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 273
+** Game Over! .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 274
+** Identifying When Parts of the Game Should Run  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 275
+** Exercise 13-6: Game Over  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 275
 
 * TRY IT YOURSELF
 ** DONE 12-4. Rocket: Make a game that begins with a rocket in the center of the screen.
