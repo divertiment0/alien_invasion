@@ -101,11 +101,27 @@ class AlienInvasion:
                 ## count visible bullets:
                 #  print(len(self.bullets))
 
+    def _create_alien(self, x_position):
+        """ Create one alien"""
+        new_alien = Alien(self)
+        new_alien.x = x_position
+        new_alien.rect.x = x_position
+        self.aliens.add(new_alien)
+        
+
+
     def _create_fleet(self):
         """ Create Aliens Fleet as sprites  group"""
-        # Make an alien 
+        # Create an alien and keep adding aliens until there's no room left.
+        # Spacing between aliens is one alien width.
         alien = Alien(self)
-        self.aliens.add(alien)
+        alien_width = alien.rect.width
+
+        current_x = alien_width
+        while current_x < (self.settings.screen_width - 2 * alien_width):
+            self._create_alien(current_x)
+            current_x += 2 * alien_width
+        
         
     def _update_fleet(self):
         """ Update Aliens Fleet"""
