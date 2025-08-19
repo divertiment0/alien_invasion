@@ -36,6 +36,8 @@ class AlienInvasion:
         self.bullets = pygame.sprite.Group()
         self.aliens = pygame.sprite.Group()
 
+        self._create_fleet()
+
         
     def run_game(self):
         """ Start the main loop for the game."""
@@ -101,9 +103,16 @@ class AlienInvasion:
 
     def _create_fleet(self):
         """ Create Aliens Fleet as sprites  group"""
+        # Make an alien 
+        alien = Alien(self)
+        self.aliens.add(alien)
         
     def _update_fleet(self):
         """ Update Aliens Fleet"""
+        # for alien in self.aliens:
+    
+        #     if alien.rect.bottom(self)
+        #     # Game OVER - TADA
             
     def _update_screen(self):
         """ Redraw the screen during each pass through the loop."""
