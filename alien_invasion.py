@@ -3,6 +3,7 @@
 import sys
 
 import pygame
+import random 
 
 from settings import Settings
 from ship import Ship
@@ -105,13 +106,16 @@ class AlienInvasion:
     def _create_alien(self, x_position, y_position):
         """ Create one alien"""
         new_alien = Alien(self)
-        new_alien.x = x_position
-        new_alien.y = y_position
-        new_alien.rect.x = x_position
-        new_alien.rect.y = y_position
+        random_x_offset = random.randint(-15, 15) # +-15 pixels horizontally 
+        random_y_offset = random.randint(-8, 8) # +-8 pixels vertically
+
+        new_alien.x = x_position + random_x_offset
+# TADA : redundnat code ?  new_alien.y = y_position
+        new_alien.rect.x = x_position + random_x_offset
+        new_alien.rect.y = y_position + random_y_offset
         self.aliens.add(new_alien)
         
-
+ 
 
     def _create_fleet(self):
         """ Create Aliens Fleet as sprites  group"""
