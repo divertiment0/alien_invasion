@@ -36,3 +36,5 @@ Let's build a game called Alien Invasion! We'll use Pygame, a collection of fun,
 - Resolved pygame.Q AttributeError (changed to pygame.K_q)
 
 > Horas non numero nisi serenas
+- Bash commands
+- run the game : python3 alien_invasion &
