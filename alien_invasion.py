@@ -48,6 +48,7 @@ class AlienInvasion:
             self.ship.update()
             self.bullets.update()
             self._update_bullets()
+            self._update_aliens()
             self._update_screen()
             self.clock.tick(60)
 
@@ -102,6 +103,12 @@ class AlienInvasion:
                     self.bullets.remove(bullet)
                 ## count visible bullets:
                 #  print(len(self.bullets))
+
+    def _update_aliens(self):
+        """Update the positions of all aliens in the fleet """
+        self.aliens.update()
+        
+                
 
     def _create_alien(self, x_position, y_position):
         """ Create one alien"""
