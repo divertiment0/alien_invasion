@@ -62,16 +62,16 @@ adding a scoreboard.
 ** DONE Creating a Row of Aliens  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 259
 ** DONE Refactoring _create_fleet() .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 260
 ** DONE Adding Rows .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 261
-** Exercise 13-1: Stars  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263
-** Exercise 13-2: Better Stars  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263
-** Making the Fleet Move  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 263
-** Moving the Aliens Right  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 263
-** Creating Settings for Fleet Direction .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 264
-** Checking Whether an Alien Has Hit the Edge .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 265
-** Dropping the Fleet and Changing Direction .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 265
-** Exercise 13-3: Raindrops  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 266
-** Exercise 13-4: Steady Rain  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 266
-** Shooting Aliens .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 266
+** DONE Exercise 13-1: Stars  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263
+** PROCESS Exercise 13-2: Better Stars  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263
+** DONE Making the Fleet Move  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 263
+** DONE Moving the Aliens Right  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 263
+** DONE Creating Settings for Fleet Direction .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 264
+** DONE Checking Whether an Alien Has Hit the Edge .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 265
+** DONE Dropping the Fleet and Changing Direction .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 265
+** DONE Exercise 13-3: Raindrops  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 266
+** TODO Exercise 13-4: Steady Rain  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 266
+** DONE Shooting Aliens .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 266
 ** Detecting Bullet Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 267
 ** Making Larger Bullets for Testing  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 268
 ** Repopulating the Fleet  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 268
