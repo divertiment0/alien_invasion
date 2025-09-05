@@ -104,6 +104,8 @@ class AlienInvasion:
                 ## count visible bullets:
                 #  print(len(self.bullets))
         self._check_bullet_allien_collisions()
+        if not self.aliens:
+            self._create_fleet()
 
     def _check_bullet_allien_collisions(self):
         """ Check for any bullets that have hit aliens."""
