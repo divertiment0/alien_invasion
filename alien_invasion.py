@@ -103,10 +103,13 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
                 ## count visible bullets:
                 #  print(len(self.bullets))
-        # Check for any bullets that have hit aliens.
+        self._check_bullet_allien_collisions()
+
+    def _check_bullet_allien_collisions(self):
+        """ Check for any bullets that have hit aliens."""
         # If so, get rid of the alien and the bullet.
         collisions = pygame.sprite.groupcollide(
-            self.bullets, self.aliens, False, True)
+            self.bullets, self.aliens, True, True)
 
         
     def _create_alien(self, x_position, y_position):
