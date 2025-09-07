@@ -1,4 +1,4 @@
-*  Alien Invasion
+* 12 Alien Invasion
 
 Chapter 12 - from [ | ]  PYTHON CRASH COURSE (3RD EDITION) A Hands-On, Project-Based
   Introduction to Programming 
@@ -53,7 +53,7 @@ adding a scoreboard.
 *** DONE Deleting Old Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 250
 *** TODO Creating the _update_bullets() Method Refactoring
 
-* ALIENS! ... 255
+*  ALIENS! ... 255
 ** DONE Reviewing the Project .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 256
 ** DONE Creating the First Alien  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 256
 ** DONE Creating the Alien Class .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 257
@@ -72,24 +72,62 @@ adding a scoreboard.
 ** DONE Exercise 13-3: Raindrops  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 266
 ** TODO Exercise 13-4: Steady Rain  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 266
 ** DONE Shooting Aliens .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 266
-** Detecting Bullet Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 267
-** Making Larger Bullets for Testing  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 268
-** Repopulating the Fleet  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 268
-** Speeding Up the Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 269
-** Refactoring _update_bullets() .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 269
-** Exercise 13-5: Sideways Shooter Part 2  . . . . . . . . . . . . . . . . . . . . . . . . . . 270
-** Ending the Game  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 270
-** Detecting Alien-Ship Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 270
-** Responding to Alien-Ship Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 271
-** Aliens That Reach the Bottom of the Screen .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 273
-** Game Over! .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 274
-** Identifying When Parts of the Game Should Run  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 275
-** Exercise 13-6: Game Over  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 275
+** DONE Detecting Bullet Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 267
+** DONE Making Larger Bullets for Testing  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 268
+** DONE Repopulating the Fleet  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 268
+** DONE Speeding Up the Bullets  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 269
+** DONE Refactoring _update_bullets() .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 269
+** TODO Exercise 13-5: Sideways Shooter Part 2  . . . . . . . . . . . . . . . . . . . . . . . . . . 270
+** DONE Ending the Game  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 270
+** DONE Detecting Alien-Ship Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 270
+** DONE Responding to Alien-Ship Collisions .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 271
+** DONE Aliens That Reach the Bottom of the Screen .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 273
+** DONE Game Over! .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 274
+** DONE Identifying When Parts of the Game Should Run  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 275
+** TODO Exercise 13-6: Game Over  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 275
 
-* TRY IT YOURSELF
+
+* 13 SCORING ... 277
+** Adding the Play Button  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 278
+** Creating a Button Class  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 278
+** Drawing the Button to the Screen .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 279
+** Starting the Game .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 281
+** Resetting the Game  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 281
+** Deactivating the Play Button  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 282
+** Hiding the Mouse Cursor  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 282
+** Exercise 14-1: Press P to Play  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 283
+** Exercise 14-2: Target Practice  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 283
+** Contents in DetailLeveling Up  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 283
+** Modifying the Speed Settings  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 283
+** Resetting the Speed  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 285
+** Exercise 14-3: Challenging Target Practice  . . . . . . . . . . . . . . . . . . . . . . . . 286
+** Exercise 14-4: Difficulty Levels  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 286
+** Scoring .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 286
+** Displaying the Score . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 286
+** Making a Scoreboard  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 287
+** Updating the Score as Aliens Are Shot Down  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 289
+** Resetting the Score .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 289
+** Making Sure to Score All Hits  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 290
+** Increasing Point Values .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 290
+** Rounding the Score  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 291
+** High Scores . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 292
+** Displaying the Level .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 294
+** Displaying the Number of Ships .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 296
+** Exercise 14-5: All-Time High Score  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 299
+** Exercise 14-6: Refactoring  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 299
+** Exercise 14-7: Expanding the Game  . . . . . . . . . . . . . . . . . . . . . . . . . . . 299
+** Exercise 14-8: Sideways Shooter, Final Version  . . . . . . . . . . . . . . . . . . . . . 299
+
+
+
+* TRY IT YOURSELF 
+** TODO ++Ship Diagonal Movement ? issue 
 ** DONE 12-4. Rocket: Make a game that begins with a rocket in the center of the screen.
 Allow the player to move the rocket up, down, left, or right using the four arrow
 keys. Make sure the rocket never moves beyond any edge of the screen.
 ** TODO 12-5. Keys: Make a Pygame file that creates an empty screen. In the event loop,
 print the event.key attribute whenever a pygame.KEYDOWN event is detected. Run
 the program and press various keys to see how Pygame responds.
+** TODO ++enhanced triple bullet firing    | | |
+** TODO ++BOmbs -> Aliens throwing bombs
+** TODO ++Shields 
